@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="/Users/kojirokarita/Desktop/HP　クレカ用/stage1/style.css">
+    <meta name="content" content="FIRE">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap" id="header">
+        <h1 class="header_logo">
+            <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 10@2x.png" alt="FIREのロゴ"></h1>
+            <nav class="pc_nav">
+             <ul>
+                <li><a href="#about">FIREとは</a></li>
+                <li><a href="#service">サービス内容</a></li>
+                <li><a href="#support">サポート体制</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#contact">問い合わせ</a></li>
+            </ul>
+            </nav>
+
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+            <ul class>
+                <li><a href="#about">FIREとは</a></li>
+                <li><a href="#service">サービス内容</a></li>
+                <li><a href="#support">サポート体制</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#contact">問い合わせ</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="stage1_about_contents">
+                <h2 class="subject">
+                    STAGE2
+                </h2>
+                <ul class="stage1_ul">
+                    <li class="stage_images">
+                        <p class="stage1_image">
+                            <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 14@2x.png">
+                         </p>
+                    </li>
+                    <li class="stage_text_right">
+                        <H3 class="stage_title">
+                        大手ECを活用した販売講座   
+                        </H3>
+                        <p class="stage_texts">
+                            Amazonから格安で仕入れたり、
+                            中国業者とタイアップして商品を無料で仕入れるノウハウをこちらでは動画で解説しています。
+                            販売方法も動画にて説明しているので<span class="red">お客様は迷うことなくこの物販方法で収益を上げられる仕様になっています。</span>
+                        </p>
+                    </li>
+                </ul>
+
+                <ul class="stage1_ul">
+                    <li class="stage_text_left">
+                        <H3 class="stage_title">
+                        アパレル販売講座 
+                        </H3>
+                        <p class="stage_texts">
+                            リサーチ→仕入→出品→販売→発送までの物販です。FIREではアパレルの仕入れルートから販売時のノウハウまでを動画で説明しています。
+                            基本的に格安仕入れ転売を行っているお客様は販売の力はすでにあると思うので、
+                            <span class="red">仕入れと目利きに対するポイントについて解説しています。</span>
+                        </p>
+                    </li>
+                    <li class="stage_images">
+                        <p class="stage1_image">
+                            <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 18@2x.png">
+                         </p>
+                    </li>
+                </ul>
+
+                <ul class="stage1_ul">
+                    <li class="stage_images">
+                        <p class="stage1_image">
+                            <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 17@2x.png">
+                         </p>
+                    </li>
+                    <li class="stage_text_right">
+                        <H3 class="stage_title">
+                        固定費削減講座 
+                        </H3>
+                        <p class="stage_texts">
+                            固定費削減のご提案をさせて頂いております。
+                            電気・ガス・水道・通信費などのライフラインにかかる固定費を見直すためのファイナンシャルプランナーが弊社には在籍しております。
+                            <span class="red">月々の固定費を見直して生活を豊かにするご案内を目的としています。</span>
+                        </p>
+                    </li>
+                </ul>
+                <a href="stage3/index4.html" class="learn_more">
+                    <span>STAGE3へ</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+</body>
+    <!-- ※footer -->
+    <footer class="contact" id="contact">
+        <div class="contact_width">
+            <p class="footer_info">
+                特定商取引法に関する表記
+            </p>
+            <p class="footer_info">
+                プライバシーポリシー
+            <p class="footer_info">
+                @copyright FIREオンライン
+            </p>
+        </div>
+    </footer>
+
+        
+    <script>
+        $(function(){
+            $('.sp_btn').click(function(){
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+            });
+
+            $('a[href^="#"]').click(function() {
+          let speed = 450;
+          let href= $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+       //   メニュー閉じる
+//        $(function() {
+//     $('sp_nav li a').on('click', function(event) {
+//     $('sp_nav').prop('checked', false);
+//   });
+// });
+$(function() {
+    $('#sp_nav a').on('click', function(event) {
+        $('.header_wrap').trigger('click');
+});
+$(window).on('load scroll',function (){
+		$('.work_detail').each(function(){
+			//ターゲットの位置を取得
+			var target = $(this).offset().top;
+			//スクロール量を取得
+			var scroll = $(window).scrollTop();
+			//ウィンドウの高さを取得
+			var height = $(window).height();
+			//ターゲットまでスクロールするとフェードインする
+			if (scroll > target - height){
+				//クラスを付与
+				$(this).addClass('active');
+			}
+		});
+	});
+   //   メニュー閉じる
+   $(function() {
+  $('#sp_btn li a').on('click', function(event) {
+    $('#sp_btn').prop('checked', false);
+  });
+});
+    });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="/Users/kojirokarita/Desktop/HP　クレカ用/tokusho/CSS/style.css">
+    <meta name="content" content="KOJIRO KARITA">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap" id="header">
+        <h1 class="header_logo">
+            <a href="/Users/kojirokarita/Desktop/HP　クレカ用/index.html">
+            <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 10@2x.png" alt="FIREのロゴ"></h1>
+        </a>
+            <nav class="pc_nav">
+             <ul>
+                <li><a href="#about">FIREとは</a></li>
+                <li><a href="#service">サービス内容</a></li>
+                <li><a href="#support">サポート体制</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#contact">問い合わせ</a></li>
+            </ul>
+            </nav>
+
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+            <ul class>
+                <li><a href="#about">FIREとは</a></li>
+                <li><a href="#service">サービス内容</a></li>
+                <li><a href="#support">サポート体制</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#contact">問い合わせ</a></li>
+            </ul>
+        </nav>
+        </div>
+
+    <main>
+<!-- 特商法 -->
+    <section class="about" id="about">
+        <div class="about_class">
+            <p class="about_legal">
+
+販特定商取引法に関する表記<br><br>
+
+販売業者：川合 環<br><br>
+
+運営総括責任：川合 環<br><br>
+
+所在地：東京都中央区勝どき<br><br>
+
+連絡先Ｅメール：support@contactus.co.jp<br><br>
+電話番号：050-7108-2864<br>
+※お電話でのご注文・ご質問には対応しておりません。<br>
+お問い合わせはEメールにてお願いいたします。<br>
+※購入にあたっての問合せ等は直接販売会社にお問合せ下さい。<br><br>
+
+ＵＲＬ：https://mnimmkk.wixsite.com/fire<br><br>
+
+商品代金以外の必要料金：銀行振り込みでお支払の場合、振込み手数料はお客様負担とさせていただきます。<br>
+送料：無料<br><br>
+
+商品代金の支払い時期：契約後クレジットカードにて決済の場合はその場で即対応。<br>
+振込対応の場合はご契約後お振込。<br>
+なお、商品・発送等に関するお問い合わせは当ショップまでお願いいたします。<br><br>
+
+問い合わせについて：上記連絡先にてご対応致します。 お問い合わせの対応時間 10時〜20時 年中無休になります。<br><br>
+
+注文方法：ホームページまたはメールにてお申し込みください。<br><br>
+
+商品引渡し方法：メールまたは郵送,直接の受け渡し。<br><br>
+
+商品引渡し時期：ご注文確認後、即時、受領確認メールをお送りいたします。<br>
+お振込確認後、営業日中3日で納品ファイルをお送りします。<br><br>
+
+お支払い方法：銀行振込、ネットバンク決済、クレジットカード払い、 コンビニ払い<br><br>
+
+返品・不良品について：商品に欠陥がある場合を除き、原則としてお客様のご都合による返品には応じておりません。<br>
+またファイル破損に関しましては再度納品ファイルをお送りいたします。<br><br>
+
+販売条件：国内<br><br>
+
+交換について：ご注文と異なる商品をお届けした場合、また配送上の問題で商品が破損していた場合に限り、商品到着後７日以内にご連絡をお願いいたします。
+<br>早急に対応させて頂きます。<br>
+            </p>
+        </div>
+    </section>
+
+    </main>
+    <!-- ※footer -->
+    <footer class="contact" id="contact">
+        <div class="contact_width">
+            <p class="footer_info">
+                特定商取引法に関する表記
+            </p>
+            <p class="footer_info">
+                プライバシーポリシー
+            <p class="footer_info">
+                @copyright FIREオンライン
+            </p>
+        </div>
+    </footer>
+
+        
+    <script>
+        $(function(){
+            $('.sp_btn').click(function(){
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+            });
+
+            $('a[href^="#"]').click(function() {
+          let speed = 450;
+          let href= $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+       //   メニュー閉じる
+//        $(function() {
+//     $('sp_nav li a').on('click', function(event) {
+//     $('sp_nav').prop('checked', false);
+//   });
+// });
+$(function() {
+    $('#sp_nav a').on('click', function(event) {
+        $('.header_wrap').trigger('click');
+});
+$(window).on('load scroll',function (){
+		$('.work_detail').each(function(){
+			//ターゲットの位置を取得
+			var target = $(this).offset().top;
+			//スクロール量を取得
+			var scroll = $(window).scrollTop();
+			//ウィンドウの高さを取得
+			var height = $(window).height();
+			//ターゲットまでスクロールするとフェードインする
+			if (scroll > target - height){
+				//クラスを付与
+				$(this).addClass('active');
+			}
+		});
+	});
+   //   メニュー閉じる
+   $(function() {
+  $('#sp_btn li a').on('click', function(event) {
+    $('#sp_btn').prop('checked', false);
+  });
+});
+    });
+
+    </script>
+</body>
+
+</html>

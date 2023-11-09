@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="/Users/kojirokarita/Desktop/HP　クレカ用/stage1/style.css">
+    <meta name="content" content="FIRE">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap" id="header">
+        <h1 class="header_logo">
+            <a href="/Users/kojirokarita/Desktop/HP　クレカ用/index.html">
+                <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 10@2x.png" alt="FIREのロゴ">
+            </a>
+        </h1>
+            <nav class="pc_nav">
+             <ul>
+                <li><a href="#about">FIREとは</a></li>
+                <li><a href="#service">サービス内容</a></li>
+                <li><a href="#support">サポート体制</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#contact">問い合わせ</a></li>
+            </ul>
+            </nav>
+
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+            <ul class>
+                <li><a href="#about">FIREとは</a></li>
+                <li><a href="#service">サービス内容</a></li>
+                <li><a href="#support">サポート体制</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#contact">問い合わせ</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="stage1_about_contents">
+                <h2 class="subject">
+                    STAGE1
+                </h2>
+                <ul class="stage1_ul">
+                    <li class="stage_images">
+                        <p class="stage1_image">
+                            <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 22.png">
+                         </p>
+                    </li>
+                    <li class="stage_text_right">
+                        <H3 class="stage_title">
+                        不用品販売講座・格安仕入れ講座    
+                        </H3>
+                        <p class="stage_texts">
+                            安く仕入れられるリストを多数弊社が保有しており、
+
+                            お客様がそのリストを用いて仕入れすることで
+
+                            購入時の価格から売却時の相場価格を算出すると
+
+                            <span class="red">10万円ほど収益が見込めます。</span>
+
+
+                            仕入れの仕方から販売の仕方まで、動画講座で学べます。
+
+                            また、リストはスプレットシートに共有されます。
+                        </p>
+                    </li>
+                </ul>
+
+                <ul class="stage1_ul">
+                    <li class="stage_text_left">
+                        <H3 class="stage_title">
+                        自己アフィリエイト講座  
+                        </H3>
+                        <p class="stage_texts">
+                            ポイ活と言われるポイントサイト（ちょびりっち、ハピタスなど）を用いたポイントの自己アフィリエイトノウハウもプチ特典としてスクールコンテンツの動画教材として組み込まれています。
+
+                            <span class="red">こちらは完全に自社ノウハウですので実践するだけで収益が上げられる即金性の高いノウハウから、</span>
+                            継続的にマイルやポイントが貯められる裏技を公開しています。
+                        </p>
+                    </li>
+                    <li class="stage_images">
+                        <p class="stage1_image">
+                            <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 20@2x.png">
+                         </p>
+                    </li>
+                </ul>
+
+                <ul class="stage1_ul">
+                    <li class="stage_images">
+                        <p class="stage1_image">
+                            <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 19@2x.png">
+                         </p>
+                    </li>
+                    <li class="stage_text_right">
+                        <H3 class="stage_title">
+                        FIRE ROBOTSの使い方  
+                        </H3>
+                        <p class="stage_texts">
+                            過去3年間分のお客様からよくある質問を全てまとめてBOTにて返信ができるシステムを導入しています。
+                            お客様はFIREの公式LINEを用いて FIRE ROBOTSという画面から<span class="red">全ての質問を一瞬で解決できる仕様になっています。</span>
+                        </p>
+                    </li>
+                </ul>
+                <a href="/Users/kojirokarita/Desktop/HP　クレカ用/stage2/index3.html" class="learn_more">
+                    <span>STAGE2へ</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+</body>
+    <!-- ※footer -->
+    <footer class="contact" id="contact">
+        <div class="contact_width">
+            <p class="footer_info">
+                特定商取引法に関する表記
+            </p>
+            <p class="footer_info">
+                プライバシーポリシー
+            <p class="footer_info">
+                @copyright FIREオンライン
+            </p>
+        </div>
+    </footer>
+
+        
+    <script>
+        $(function(){
+            $('.sp_btn').click(function(){
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+            });
+
+            $('a[href^="#"]').click(function() {
+          let speed = 450;
+          let href= $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+       //   メニュー閉じる
+//        $(function() {
+//     $('sp_nav li a').on('click', function(event) {
+//     $('sp_nav').prop('checked', false);
+//   });
+// });
+$(function() {
+    $('#sp_nav a').on('click', function(event) {
+        $('.header_wrap').trigger('click');
+});
+$(window).on('load scroll',function (){
+		$('.work_detail').each(function(){
+			//ターゲットの位置を取得
+			var target = $(this).offset().top;
+			//スクロール量を取得
+			var scroll = $(window).scrollTop();
+			//ウィンドウの高さを取得
+			var height = $(window).height();
+			//ターゲットまでスクロールするとフェードインする
+			if (scroll > target - height){
+				//クラスを付与
+				$(this).addClass('active');
+			}
+		});
+	});
+   //   メニュー閉じる
+   $(function() {
+  $('#sp_btn li a').on('click', function(event) {
+    $('#sp_btn').prop('checked', false);
+  });
+});
+    });
+
+    </script>
+</body>
+
+</html>

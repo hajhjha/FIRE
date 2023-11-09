@@ -1,0 +1,578 @@
+@charset "utf-8";
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color:#222222;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    transition: 0.3s;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:50px;
+    background-color: #ffff;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right:50px;
+}
+/* ※ヘッダー */
+body {
+    background-color: #FFFF;
+}
+
+.background {
+    z-index: 100;
+}
+.header_logo {
+    width: 88px;
+    padding-left:30px;
+}
+
+.pc_nav ul {
+    display: flex;
+    margin:0,auto;
+}
+.pc_nav li {
+    width: 100px;
+    margin-left: 70px;
+    text-align: center;
+    font-size: 15px;
+}
+.pc_nav a{
+    color: #222222;
+}
+
+.pc_nav li:hover {
+    opacity:0.5;
+}
+
+.sp_nav {
+    display: none;
+}
+.sp_btn {
+    display: none;
+}
+
+.about{
+     background: linear-gradient(to right,#3fbff0,#00a1e9,#008dd7);
+     padding-top: 50px;
+     margin: 0 auto;
+     /* text-align: center; */
+}
+.about_main{
+    display: flex;
+}
+.about_class{
+    padding:70px;
+    max-width: 1100px;
+    margin:0 auto;
+}
+.about_title_sub{
+    padding-bottom: 30px;
+    font-size: 30px;
+    color:white;
+}
+.about_title{
+    font-size: 50px;
+    padding-bottom: 40px;
+    color:white;
+}
+.about_main{
+    margin: 0 auto;
+}
+.about_text{
+    width: 100%;
+}
+.about_h3{
+    font-size:30px;
+    padding-bottom: 80px;
+    color:white;
+}
+.about_main_text{
+    font-size: 20px;
+    color:white;
+    line-height: 1.5em;
+}
+
+.inquiry{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color:#f7931e; 
+    box-shadow: 7px 7px #664606;
+    max-width: 350px;
+    height:70px;
+    padding: 20px 60px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    transition:all 0.3s ease-in-out;
+}
+
+.inquiry:hover{
+    box-shadow: none;
+}
+.about_button{
+    margin:0 auto;
+    text-align: center;
+    padding:50px; 
+}
+
+.about_2{
+    background-image: url("../images/アセット 12.png");
+    margin:0 auto;
+    max-width:100%;
+    /* height:740px; */
+}
+
+.about_2_content{
+    max-width: 750px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.subject{
+    padding-top: 50px;
+    color: #FFC015;
+    font-size:30pt;
+    padding-bottom: 30px;
+}
+.content_subject{
+    font-size:50px;
+    font-weight: bold;
+    padding-bottom: 120px;
+}
+
+.about_2content{
+    font-size:20px;
+    padding-bottom: 80px;
+    line-height: 1.5em;
+}
+
+/* サービス */
+.service{
+    background-color:#E6E6E6 ;
+}
+.service_content{
+    /* width: 1080px; */
+    text-align: center;
+    margin: 0 auto;
+}
+.service_subject{
+    font-size:50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.service_text{
+    font-size:20px;
+    padding-bottom: 60px;
+    line-height: 1.5em;
+    max-width:690px;
+    text-align: center;
+    margin: 0 auto;
+}
+.service_contents{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.stage{
+    font-size: 30px;
+}
+.stage1{
+margin-right: 3.3%;
+width: 100%;
+}
+
+.stage1:last-child {
+margin-right: 0;
+}
+
+.about_stage_content{
+    background-color: #FFFF;
+}
+.about_stage_content{
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.STAGE_content{
+    margin:0 auto;
+    font-size: 15px;
+    text-align: left;
+    width:80%;
+    line-height: 1.5em;
+}
+.learn_more{
+    margin-top:30px;
+    margin-bottom:15px;
+    width:80%;
+    background-color: #FFFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* .learn_more:hover{
+    background-color: #008dd7;
+} */
+/* .main_photo{
+    max-width:50%;
+} */
+.learn_more{
+    /*アニメーションの起点とするためrelativeを指定*/
+    color: #0008e9;
+    position: relative;
+  overflow: hidden;
+    /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+    border: 1px solid #0008e9;/* ボーダーの色と太さ */
+    text-align: center;
+    outline: none;
+    /*アニメーションの指定*/   
+    transition: ease .2s;
+}
+
+/*ボタン内spanの形状*/
+.learn_more span {
+  position: relative;
+  z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color: #0008e9;
+}
+
+.learn_more:hover span{
+color:#fff;
+position: relative;
+z-index: 5;
+}
+
+/*== 背景が流れる（左から右） */
+.learn_more:before {
+  content: '';
+    /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+    /*色や形状*/
+  background:#0008e9;/*背景色*/
+  width: 100%;
+  height: 100%;
+    /*アニメーション*/
+  transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
+}
+
+/*hoverした際の形状*/
+.learn_more:hover:before{
+  transform-origin:left top;
+  transform:scale(1, 1);
+}
+
+
+/* サポート */
+.support{
+        background: linear-gradient(to right,#3fbff0,#00a1e9,#008dd7);
+        margin: 0 auto;
+        color: #fff;
+}
+.support_content{
+    max-width: 750px;
+    margin:0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.support_main{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.support_subject{
+    font-size:50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    color: #fff;
+    line-height: 1.5em;
+}
+.support_text{
+    font-size:15px;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+.support_text_li{
+    font-size:25px;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/* プライス */
+.price_main{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    text-align: center;
+    align-items:start;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin:0 auto;
+    background-color: #fefefe;
+}
+.price_text{
+    text-align: right;
+}
+
+.shikaku1{
+    width:490px;
+    height:590px;
+    border: 4px solid #F7931E;
+    border-radius: 20px;
+}
+.shikaku2{
+    width:490px;
+    height:105px;
+    background-color: #F7931E;
+    border-radius: 10px;
+}
+.online{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5em;
+    color: #fff;
+    padding-top:15px;
+    padding-bottom: 5px;
+}
+.boshu{
+    font-size:20px;
+    line-height: 1.5em;
+    color: #fff;
+}
+.price_div{
+    margin-top:50px;
+}
+.price_{
+    margin:0 auto;
+    color: #F7931E;
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(transparent 80%,#EEBC8C 70%);
+    max-width:40%;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+.subject_1{
+    color: #FFC015;
+    font-size:30pt;
+    padding-bottom: 30px;
+}
+.course{
+    padding-top: 50px;
+}
+.course_about{
+    position: relative;
+    line-height: 1.8;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.course_about::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: .5em;
+    left: 4.5em;
+    width: 10px;
+    height: 5px;
+    border-left: 3px solid #F7931E;
+    border-bottom: 3px solid #F7931E;
+    transform: rotate(-45deg);
+}
+.course_about:last-child{
+    padding-bottom: none;
+}
+
+.btnshine{
+    /*キラッと光る基点とするためrelativeを指定*/
+    position: relative;
+    /*ボタンの形状*/  
+    display:inline-block;
+    background-color: #222222;
+    color: #FFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+    margin-bottom:30px;
+    width:80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*キラッと光る*/
+.btnshine::before {
+  content: '';
+    /*絶対配置でキラッと光るの位置を決める*/
+  position: absolute;
+  top: 0;
+  left: -75%;
+    /*キラッと光る形状*/
+    width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  transform: skewX(-25deg);
+}
+
+/*hoverした際の移動のアニメーション*/
+.btnshine:hover::before {
+  animation: shine 0.7s;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+.meeting{
+    background-image: url("../images/アセット 1@2x.png");
+}
+
+.meeting_about{
+padding-top:95px;
+padding-bottom: 80px;
+text-align: center;
+}
+.soudannkai{
+    padding-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.inquiry_2{
+    /*線の基点とするためrelativeを指定*/
+  position:relative;
+    /*ボタンの形状*/
+  color:#FFF;
+  border:1px solid #333;
+    padding: 10px 20px; 
+  display:inline-block;
+    text-decoration: none;
+    outline: none;
+    /*アニメーションの指定*/
+  transition:all 0.3s ease-in-out;
+  font-weight: bold;
+  width: 350px;
+  font-size: 30px;
+  background-color: #0008e9;
+}
+
+/*hoverした際の背景の形状*/
+.inquiry_2:hover{
+  background:#F7931E;
+  color: #fff;
+  border-color:transparent;
+}
+
+/*線の設定*/
+.inquiry_2::before,
+.inquiry_2::after {
+  content:'';
+    /*絶対配置で線の位置を決める*/   
+  position:absolute;
+  border:solid #333;
+  width:10px;
+  height:10px;
+    /*アニメーションの指定*/
+  transition:all 0.3s ease-in-out;
+}
+
+/*線の位置と形状*/
+.inquiry_2::before{
+  top:-6px;
+  left:-6px;
+  border-width:1px 0 0 1px;
+}
+
+/*線の位置と形状*/
+.inquiry_2::after{
+  bottom:-6px;
+  right:-6px;
+  border-width:0 1px 1px 0;
+}
+
+/*hoverした際の線の形状*/
+.inquiry_2::before,
+.inquiry_2::after{
+  width:calc(100% + 11px);
+  height:calc(100% + 11px);
+  border-color:#666;
+}
+
+/* footer */
+.footer{
+    background-color:#4D4d4d;
+}
+.contact_width{
+    padding-top:40px;
+    padding-bottom:20px;
+    background-color:#4D4d4d;
+    text-align: center;
+}
+.footer_info{
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+}

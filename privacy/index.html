@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="/Users/kojirokarita/Desktop/HP　クレカ用/tokusho/CSS/style.css">
+    <meta name="content" content="KOJIRO KARITA">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap" id="header">
+        <h1 class="header_logo">
+            <a href="/Users/kojirokarita/Desktop/HP　クレカ用/index.html">
+            <img src="/Users/kojirokarita/Desktop/HP　クレカ用/images/アセット 10@2x.png" alt="FIREのロゴ"></h1>
+            </a>
+            <nav class="pc_nav">
+             <ul>
+                <li><a href="#about">FIREとは</a></li>
+                <li><a href="#service">サービス内容</a></li>
+                <li><a href="#support">サポート体制</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#contact">問い合わせ</a></li>
+            </ul>
+            </nav>
+
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+            <ul class>
+                <li><a href="#about">FIREとは</a></li>
+                <li><a href="#service">サービス内容</a></li>
+                <li><a href="#support">サポート体制</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#contact">問い合わせ</a></li>
+            </ul>
+        </nav>
+        </div>
+
+    <main>
+<!-- 特商法 -->
+    <section class="about" id="about">
+        <div class="about_class">
+            <p class="about_legal">
+
+プライバシーポリシー
+
+川合 環（以下「当人」とします）は、個人情報を保護する事は、当社が事業活動をする上での責務だと考えています。<br><br>
+
+​当社はお客様の個人情報の適切な管理・利用に十分配慮し以下の取り組みを実地します。<br><br><br>
+
+​個人情報の利用目的<br>
+
+当社はお客様からお預かりしたお名前・ご住所・電話番号・Eメールアドレスなどの個人情報はお客様から同意いただいた目的の範囲内でのみ利用させて頂きます。<br><br>
+
+​個人情報の第三者への開示・提示の禁止<br>
+
+当社は、お客様から同意いただいている場合や法令に基づき開示を請求されたなどの正当な理由がある場合をのぞき、原則としてお客様の個人情報を第三者に開示・提示いたしません。<br><br>
+
+​個人情報の照会・訂正<br>
+
+当社は、お客様から個人情報の照会・訂正などをご希望された場合には、お客様ご本人である事が確認できた場合に限り、合理的な範囲内で対応いたします。<br><br>
+
+​継続的な見直しと改善<br>
+
+当社は、保有する個人情報に関して、適用される日本の法令、その他規範を厳守するとともに社会環境の変化に応じて、本ポリシーの内容を適宜見直し、その改善に努めます。<br><br>
+
+個人情報取り扱いに関するお問い合わせ<br>
+
+個人情報の取り扱いについて、ご不明な点・ご要望がございましたら下記までお問い合わせください。
+<br><br>
+TEL/050-1365-1979<br>
+URL/ https://mnimmkk.wixsite.com/fire<br>
+        </div>
+    </section>
+
+    </main>
+    <!-- ※footer -->
+    <footer class="contact" id="contact">
+        <div class="contact_width">
+            <p class="footer_info">
+                特定商取引法に関する表記
+            </p>
+            <p class="footer_info">
+                プライバシーポリシー
+            <p class="footer_info">
+                @copyright FIREオンライン
+            </p>
+        </div>
+    </footer>
+
+        
+    <script>
+        $(function(){
+            $('.sp_btn').click(function(){
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+            });
+
+            $('a[href^="#"]').click(function() {
+          let speed = 450;
+          let href= $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+       //   メニュー閉じる
+//        $(function() {
+//     $('sp_nav li a').on('click', function(event) {
+//     $('sp_nav').prop('checked', false);
+//   });
+// });
+$(function() {
+    $('#sp_nav a').on('click', function(event) {
+        $('.header_wrap').trigger('click');
+});
+$(window).on('load scroll',function (){
+		$('.work_detail').each(function(){
+			//ターゲットの位置を取得
+			var target = $(this).offset().top;
+			//スクロール量を取得
+			var scroll = $(window).scrollTop();
+			//ウィンドウの高さを取得
+			var height = $(window).height();
+			//ターゲットまでスクロールするとフェードインする
+			if (scroll > target - height){
+				//クラスを付与
+				$(this).addClass('active');
+			}
+		});
+	});
+   //   メニュー閉じる
+   $(function() {
+  $('#sp_btn li a').on('click', function(event) {
+    $('#sp_btn').prop('checked', false);
+  });
+});
+    });
+
+    </script>
+</body>
+
+</html>
