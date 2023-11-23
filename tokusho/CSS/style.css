@@ -68,7 +68,7 @@ body {
 }
 
 .pc_nav ul {
-    display: flex;
+    display: none;
     margin:0,auto;
 }
 .pc_nav li {

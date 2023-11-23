@@ -576,3 +576,227 @@ text-align: center;
     padding-bottom: 20px;
     color: #FFFFFF;
 }
+
+@media only screen and (max-width: 768px) {
+    .pc_nav {
+        display: none;
+    }
+
+    .sp_btn {
+        position: absolute;
+        display: block;
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .sp_btn span {
+        background-color: #150101;
+        width: 33px;
+        height: 2px;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        background-color: #150101;
+        width: 33px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background-color: transparent;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgba(127, 113, 250, 0.8);
+        width: 100%;
+    }
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sp_nav li {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 50px;
+        color: #150101;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+
+    p {
+        line-height: 1.75;
+    }
+    /* ※メインビジュアル */
+    .header_logo {
+        width: 30%;
+    }
+    .name {
+        width: 50.4%;
+    }
+    /* ※about */
+    .about {
+        padding-top: 60px;
+        padding-bottom: 45px;
+        margin: 0 auto;
+    }
+    .about_class{
+        padding: 30px;
+    }
+    .subject{
+        padding-bottom: 0px;
+    }
+    .about_images {
+        width: 70px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+    .about_main {
+        display: block;
+    }
+    .inquiry{
+        font-size: 15px;
+    }
+    .content_subject{
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .about_2content {
+        text-align: center;
+        margin: auto;
+    }
+    .about_2_content{
+        width: 80%;
+    }
+
+    /* .service */
+    .service_content{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .service_subject{
+        font-size: 30px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    .service_text{
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    .service_contents{
+        display: block;
+        width: 100%;
+    }
+    .stage1{
+        padding-bottom:20px;
+    }
+    .stage1:last-child{
+        padding-bottom: none;
+    }
+
+    
+    /* ※support */
+    .support_content{
+        width: 80%;
+    }
+    .support_subject{
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .support_main {
+        display: block;
+        padding-bottom: 40px;
+    }
+    .support_text_li {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+
+        /* price; */
+    .price_main {
+        display: block;
+        width:80%;
+    }
+    .shikaku1{
+        width:100%;
+        height:auto;
+    }
+    .shikaku2{
+        width: 100%;
+    }
+
+    .price_text{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .price_about{
+        margin: 0 auto;
+    }
+    .price_{
+        font-size: 30px;
+        text-align: center;
+        background-color: linear-gradient(transparent 50%,#EEBC8C 70%);
+    }
+.course_about::after{
+        display: none;
+}
+
+/* meeting */
+.meeting_about{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+    .inquiry_2 {
+        font-size: 20px;
+        width: auto;
+    }
+    /* ※コンタクト */
+    .contact_width {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .contact_width_mobile {
+        display: block;
+    }
+    
+    span {
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+}
