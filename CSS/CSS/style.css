@@ -577,7 +577,7 @@ text-align: center;
     color: #FFFFFF;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .pc_nav {
         display: none;
     }
@@ -635,7 +635,7 @@ text-align: center;
         top: 0;
         left: 0;
         height: 100vh;
-        background-color: rgba(127, 113, 250, 0.8);
+        background-color: rgba(138, 250, 113, 0.8);
         width: 100%;
     }
     .sp_nav ul {
@@ -649,7 +649,7 @@ text-align: center;
         font-weight: bold;
         font-size: 20px;
         padding: 50px;
-        color: #150101;
+        color: #FFF;
         font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
             "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
             "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
@@ -705,6 +705,9 @@ text-align: center;
     .service_content{
         width: 80%;
         margin: 0 auto;
+    }
+    .service_contents{
+        padding-bottom: 40px;
     }
     .service_subject{
         font-size: 30px;

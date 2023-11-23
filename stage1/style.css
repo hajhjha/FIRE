@@ -214,3 +214,135 @@ z-index: 5;
     padding-bottom: 20px;
     color: #FFFFFF;
 }
+@media screen and (max-width: 768px) {
+    .pc_nav {
+        display: none;
+    }
+
+    .sp_btn {
+        position: absolute;
+        display: block;
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .sp_btn span {
+        background-color: #150101;
+        width: 33px;
+        height: 2px;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        background-color: #150101;
+        width: 33px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background-color: transparent;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgba(127, 113, 250, 0.8);
+        width: 100%;
+    }
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sp_nav li {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 50px;
+        color: #fff;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+
+    p {
+        line-height: 1.75;
+    }
+    /* ※メインビジュアル */
+    .header_logo {
+        width: 30%;
+    }
+    .name {
+        width: 50.4%;
+    }
+    /* ※about */
+    .stage1_ul {
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .subject{
+        font-size: 30px;
+        max-width: fit-content;
+    }
+    .stage_text_right{
+        text-align: center;
+        width: auto;
+        margin: 0 auto;
+    }
+    .stage_text_left{
+        text-align: center;
+        width: auto;
+        margin: 0 auto;
+    }
+    .stage_title{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .stage_texts{
+        margin: 0 auto;
+        width: auto;
+    }
+    
+    /* ※コンタクト */
+    .contact_width {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .contact_width_mobile {
+        display: block;
+    }
+    
+    span {
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+}
